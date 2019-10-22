@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Typography} from 'antd'
+import {Typography, Rate} from 'antd'
 import Menu from '../menu'
 import ReviewForm from '../review-form'
 
