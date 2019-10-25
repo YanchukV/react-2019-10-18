@@ -32,9 +32,7 @@ class App extends Component {
 
   render() {
     const {restaurants} = this.props
-    return restaurants.map(restaurant => (
-      <Restaurant restaurant={restaurant} key={restaurant.id} />
-    ))
+    return <Restaurant restaurant={restaurants[0]} />
   }
 }
 
