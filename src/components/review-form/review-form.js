@@ -21,18 +21,15 @@ const ReviewForm = () => {
             Leave your review
           </Typography.Title>
           <Form onSubmit={handleSubmit}>
-            <Form.Item>
-              <Input.TextArea
-                rows={3}
-                value={text}
-                onChange={setText}
-                size="large"
-                className={{
-                  [styles.invalid]: !isValidText,
-                }}
-                autosize={{minRows: 3, maxRows: 6}}
-              />
-            </Form.Item>
+            <Input.TextArea
+              rows={3}
+              value={text}
+              onChange={setText}
+              size="large"
+              className={{
+                [styles.invalid]: !isValidText,
+              }}
+            />
             <div>
               Rating: <Rate value={rate} onChange={setRate} />
             </div>

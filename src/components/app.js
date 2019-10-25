@@ -13,22 +13,17 @@ class App extends Component {
   //     value: 0
   //   }
   // }
-
-  componentDidMount() {
-    console.log('Did mount')
-    this.setState(prevState => ({
-      value: prevState.value + 1,
-    }))
-    // fetch data
-  }
-  componentDidUpdate(prevProps) {
-    console.log('Did update', this.state.value, this.state.otherValue)
-    // subscribe on some events
-  }
-  componentWillUnmount() {
-    console.log('Did unmount')
-    // unsubscribe from some events
-  }
+  //
+  // componentDidMount() {
+  //   // fetch data
+  // }
+  // componentDidUpdate(prevProps) {
+  //   // subscribe on some events
+  // }
+  // componentWillUnmount() {
+  //   console.log('Did unmount')
+  //   // unsubscribe from some events
+  // }
 
   render() {
     const {restaurants} = this.props
